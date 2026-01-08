@@ -13,12 +13,18 @@ This project investigates the relationship between Medicaid coverage and Serious
   - Analyzing employment status by program category (Emergency, Inpatient, Outpatient, etc.).
   - Implementing Instrumental Variable (IV) Regressions to assess the impact of Medicaid on mental health outcomes.
 
-# Key Findings
+## Code Workflow
+In order to run the code, follow these steps:
+1. Download the CSV files from the URLs provided below and drop them into a folder containing the Final Project Data and Final Project Analysis files
+2. Run the Final Project Data File
+3. Run the Final Project Analysis File
+
+## Key Findings
 - SMI Prevalence: Analysis shows a significant increase in adult respondents identified with SMI, rising from approximately 81.7% in 2013 to over 94.5% in 2022.
 - Medicaid Enrollment: Enrollment among surveyed adults with SMI has remained relatively stable, hovering around 71–74% across the decade studied.
 - Employment Disparities: There is a notable gap in employment for those with SMI; for example, in 2022, only ~33.6% of Outpatient program respondents with SMI were employed, compared to higher unemployment/NILF (Not in Labor Force) rates in other categories.
 
-# Data Source
+## Data Source
 The data is sourced from the New York State Office of Mental Health (OMH) Patient Characteristics Survey.
 
 Note: Due to the size of the datasets, raw CSV files are not included in this repository but can be found using the following links:
