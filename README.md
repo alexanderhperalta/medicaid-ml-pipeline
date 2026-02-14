@@ -16,8 +16,8 @@ This project investigates the relationship between Medicaid coverage and Serious
 ## Code Workflow
 In order to run the code, follow these steps:
 1. Download the CSV files from the URLs provided below and drop them into a folder containing the Final Project Data and Final Project Analysis files
-2. Run the Final Project Data File
-3. Run the Final Project Analysis File
+2. Run the 01_data_processing.ipynb File
+3. Run the 03_analysis.ipynb File
 
 ## Key Findings
 - SMI Prevalence: Analysis shows a significant increase in adult respondents identified with SMI, rising from approximately 81.7% in 2013 to over 94.5% in 2022.
