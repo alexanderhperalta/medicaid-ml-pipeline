@@ -4,11 +4,11 @@
 This project investigates the relationship between Medicaid coverage and Serious Mental Illness (SMI) in New York State. The final paper includes an analysis conducted on Patient Characteristics Survey (PCS) data for the years 2013, 2015, 2017, 2019, and 2022, exploring demographics, employment status, and insurance enrollment trends for individuals receiving mental health services. The primary research interest is identifying how Medicaid enrollment impacts health outcomes for beneficiaries with SMI, particularly in the context of the end of continuous enrollment laws.
 
 ## Repository Contents
-- Final Paper.pdf: A comprehensive research paper detailing the history of Medicaid, the prevalence of SMI in New York, and the policy implications of current unwinding laws.
-- Final Project Data.ipynb: Handles data engineering and preparation. It includes custom Python classes to:
+- Medicaid and Serious Mental Illness.pdf: A comprehensive research paper detailing the history of Medicaid, the prevalence of SMI in New York, and the policy implications of current unwinding laws.
+- 01_data_processing.ipynb: Handles data engineering and preparation. It includes custom Python classes to:
   - Automate directory and folder creation.
   - Map categorical values across multi-year datasets into a standardized numerical format.
-- Final Project Analysis.ipynb: Performs the core statistical analysis. Key features include:
+- 03_analysis.ipynb: Performs the core statistical analysis. Key features include:
   - Generating summaries of respondent demographics (SMI prevalence, Medicaid enrollment, SSI assistance).
   - Analyzing employment status by program category (Emergency, Inpatient, Outpatient, etc.).
   - Implementing Instrumental Variable (IV) Regressions to assess the impact of Medicaid on mental health outcomes.
