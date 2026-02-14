@@ -1,4 +1,4 @@
-# Medicaid-and-Serious-Mental-Illness-in-New-York
+# Medicaid Machine Learning Pipeline
 
 ## Project Overview
 This project investigates the relationship between Medicaid coverage and Serious Mental Illness (SMI) in New York State. The final paper includes an analysis conducted on Patient Characteristics Survey (PCS) data for the years 2013, 2015, 2017, 2019, and 2022, exploring demographics, employment status, and insurance enrollment trends for individuals receiving mental health services. The primary research interest is identifying how Medicaid enrollment impacts health outcomes for beneficiaries with SMI, particularly in the context of the end of continuous enrollment laws.
