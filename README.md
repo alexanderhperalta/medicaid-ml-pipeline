@@ -34,11 +34,11 @@ The data is sourced from the New York State Office of Mental Health (OMH) Patien
 
 Note: Due to the size of the datasets, raw CSV files are not included in this repository but can be found using the following links:
 
-  https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2013
-  https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2015
-  https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2017
-  https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2019
-  https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2022-persons-served-by-survey-year-region-of-provider-g
+  - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2013
+  - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2015
+  - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2017
+  - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2019
+  - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2022-persons-served-by-survey-year-region-of-provider-g
 
 ## Tech Stack
 Python, Pandas, NumPy, OpenAI API, HDBSCAN, UMAP, scikit-learn, XGBoost, Streamlit, Plotly
