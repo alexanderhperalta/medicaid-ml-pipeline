@@ -20,6 +20,9 @@ This project investigates the relationship between Medicaid coverage and Serious
  
 ![UMAP Clusters](images/umap_clusters.png)
 
+![Streamlit App](images/app.png)
+
+
 ## Setup
 1. Download PCS survey data from the links below into `data/`
 2. Install dependencies: `pip install -r requirements.txt`
