@@ -18,7 +18,7 @@ This project investigates the relationship between Medicaid coverage and Serious
   - Analyzing employment status by program category (Emergency, Inpatient, Outpatient, etc.).
   - Implementing Instrumental Variable (IV) Regressions to assess the impact of Medicaid on mental health outcomes.
  
-
+![UMAP Clusters](images/umap_clusters.png)
 
 ## Setup
 1. Download PCS survey data from the links below into `data/`
