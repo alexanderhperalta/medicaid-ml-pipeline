@@ -1,0 +1,2 @@
+cd "/Users/alexanderperalta/Desktop/Healthcare Project/src"
+streamlit run app.py
