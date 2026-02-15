@@ -8,16 +8,21 @@ This project investigates the relationship between Medicaid coverage and Serious
 - 01_data_processing.ipynb: Handles data engineering and preparation. It includes custom Python classes to:
   - Automate directory and folder creation.
   - Map categorical values across multi-year datasets into a standardized numerical format.
+- 02_HDBSCAN.ipynb: 
+  - Embedded 10,000 patient records using OpenAI's text-embedding-3-small
+  - Clustered patients using HDBSCAN into 11 meaningful groups
+  - Generated clinical summaries for each cluster using GPT-4o-mini
+  - Built an interactive Streamlit app that answers natural language questions about the dataset using LLM-generated Pandas code
 - 03_analysis.ipynb: Performs the core statistical analysis. Key features include:
   - Generating summaries of respondent demographics (SMI prevalence, Medicaid enrollment, SSI assistance).
   - Analyzing employment status by program category (Emergency, Inpatient, Outpatient, etc.).
   - Implementing Instrumental Variable (IV) Regressions to assess the impact of Medicaid on mental health outcomes.
 
-## Code Workflow
-In order to run the code, follow these steps:
-1. Download the CSV files from the URLs provided below and drop them into a folder containing the Final Project Data and Final Project Analysis files
-2. Run the 01_data_processing.ipynb File
-3. Run the 03_analysis.ipynb File
+## Setup
+1. Download PCS survey data from the links below into `data/`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run notebooks in order: `01_data_processing.ipynb` → `02_clustering.ipynb` → `03_analysis.ipynb`
+4. Launch the app: `streamlit run src/app.py`
 
 ## Key Findings
 - SMI Prevalence: Analysis shows a significant increase in adult respondents identified with SMI, rising from approximately 81.7% in 2013 to over 94.5% in 2022.
@@ -38,3 +43,6 @@ https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2017
 https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2019
 
 https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2022-persons-served-by-survey-year-region-of-provider-g
+
+## Tech Stack
+Python, Pandas, NumPy, OpenAI API, HDBSCAN, UMAP, scikit-learn, XGBoost, Streamlit, Plotly
