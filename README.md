@@ -63,7 +63,18 @@ This approach enables:
 **Generated narrative:**
 ```
 Topic Title for Cluster 14: "Outpatient Mental Health Needs of Hispanic Female Children"
-Clinical Notes: The cluster of 382 outpatient child patients is predominantly female, aged between pre-K and high school, with a significant number identifying as Hispanic/Latino. Most patients are living in private residences, cohabitating with others, and are not currently in the labor force, indicating a lack of employment opportunities. A notable characteristic of this group is the presence of serious mental illnesses, with many patients facing challenges related to their mental health, yet lacking chronic physical health conditions. This cohort differs from the general mental health population by demonstrating a higher prevalence of severe mental illnesses without significant comorbid chronic health issues, suggesting a focused mental health intervention need. Recommended interventions include tailored outpatient therapy, psychoeducation for families, and coordination of mental health services to address the unique challenges faced by these children, particularly in the context of their cultural background and socioeconomic status.
+Clinical Notes: The cluster of 382 outpatient child patients is predominantly female, aged
+between pre-K and high school, with a significant number identifying as Hispanic/Latino.
+Most patients are living in private residences, cohabitating with others, and are not
+currently in the labor force, indicating a lack of employment opportunities. A notable
+characteristic of this group is the presence of serious mental illnesses, with many patients
+facing challenges related to their mental health, yet lacking chronic physical health
+conditions. This cohort differs from the general mental health population by demonstrating a
+higher prevalence of severe mental illnesses without significant comorbid chronic health
+issues, suggesting a focused mental health intervention need. Recommended interventions
+include tailored outpatient therapy, psychoeducation for families, and coordination of
+mental health services to address the unique challenges faced by these children,
+particularly in the context of their cultural background and socioeconomic status.
 ```
 
 ## Setup
