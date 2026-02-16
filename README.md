@@ -12,13 +12,23 @@ This project investigates the relationship between Medicaid coverage and Serious
   - Embedded 10,000 patient records using OpenAI's text-embedding-3-small
   - Clustered patients using HDBSCAN into 11 meaningful groups
   - Generated clinical summaries for each cluster using GPT-4o-mini
-  - Built an interactive Streamlit app that answers natural language questions about the dataset using LLM-generated Pandas code
+
+![UMAP Clusters](images/umap_clusters.png)
+
 - 03_analysis.ipynb: Performs the core statistical analysis. Key features include:
   - Generating summaries of respondent demographics (SMI prevalence, Medicaid enrollment, SSI assistance).
   - Analyzing employment status by program category (Emergency, Inpatient, Outpatient, etc.).
   - Implementing Instrumental Variable (IV) Regressions to assess the impact of Medicaid on mental health outcomes.
- 
-![UMAP Clusters](images/umap_clusters.png)
+- app.py: Interactive Streamlit app with the following features:
+  - Natural Language Query Interface
+    - Ask questions in plain English - GPT-4 generates and executes Pandas code in real-time
+      - "What percentage of SMI patients are employed?"
+      - "Compare Medicaid enrollment rates by survey year"
+      - "Show age distribution for inpatient programs"
+  - Interactive Dashboard
+    - Filter by year and metric to explore demographic trends
+  - Geographic Analysis
+    - Density heatmaps showing patient distribution and service utilization across NY
 
 ![Streamlit App](images/app.png)
 
@@ -62,6 +72,13 @@ Clinical Notes: The patient cluster consists predominantly of adult males (65.5%
 3. Run notebooks in order: `01_data_processing.ipynb` → `02_clustering.ipynb` → `03_analysis.ipynb`
 4. Launch the app: `streamlit run src/app.py`
 
+## Tech Stack
+
+**ML/AI:** OpenAI API (GPT-4o-mini, text-embedding-3-large), UMAP, HDBSCAN, scikit-learn
+**App:** Streamlit, Plotly, Mapbox
+**Data:** Pandas, NumPy (750k+ records across 5 years)
+**Analysis:** Instrumental Variable Regression, Statistical Modeling
+
 ## Key Findings
 - SMI Prevalence: Analysis shows a significant increase in adult respondents identified with SMI, rising from approximately 81.7% in 2013 to over 94.5% in 2022.
 - Medicaid Enrollment: Enrollment among surveyed adults with SMI has remained relatively stable, hovering around 71–74% across the decade studied.
@@ -77,6 +94,3 @@ Note: Due to the size of the datasets, raw CSV files are not included in this re
   - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2017
   - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2019
   - https://catalog.data.gov/dataset/patient-characteristics-survey-pcs-2022-persons-served-by-survey-year-region-of-provider-g
-
-## Tech Stack
-Python, Pandas, NumPy, OpenAI API, HDBSCAN, UMAP, scikit-learn, XGBoost, Streamlit, Plotly
