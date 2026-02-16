@@ -22,6 +22,39 @@ This project investigates the relationship between Medicaid coverage and Serious
 
 ![Streamlit App](images/app.png)
 
+## Methodology
+
+### Why Generate Clinical Notes?
+Traditional clustering on survey data produces statistically valid but clinically meaningless groups (e.g., "Cluster 3: high on variable_42"). To create interpretable patient archetypes, I:
+
+1. **Synthesized clinical narratives** from structured survey responses
+   - Converted demographics, service utilization, insurance status into prose
+   - Example: "45-year-old female receiving outpatient services, enrolled in Medicaid, unemployed, diagnosed with SMI"
+
+2. **Created semantic embeddings** using OpenAI's text-embedding-3-small
+   - Captures clinical similarity beyond raw feature correlations
+   - Patients with similar stories cluster together regardless of feature order
+
+3. **Discovered 11 patient archetypes** using HDBSCAN
+   - Density-based clustering finds natural groupings without forcing a predetermined K
+
+4. **Generated interpretable summaries** using GPT-4o-mini
+   - Each cluster described in clinical terms
+   - Example: "Young adults (18-25) in crisis intervention programs, primarily uninsured"
+
+### Why This Matters
+This approach enables:
+  - **Clinicians** to understand patient subpopulations without learning ML
+  - **Policymakers** to target interventions to specific archetypes
+  - **Researchers** to generate hypotheses about differential treatment effects
+
+### Example Generated Clinical Note
+
+**Generated narrative:**
+```
+Topic Title for Cluster 5: "Unemployed Adults with Serious Mental Illness in NYC"
+Clinical Notes: The patient cluster consists predominantly of adult males (65.5%) and females (34.5%) residing in the New York City region, primarily in private residences and living alone. The cohort is characterized by high unemployment rates, with most patients not in the labor force and not actively seeking work; a significant portion holds college or graduate degrees. Mental illness is prevalent among all individuals, with serious mental illness reported, and many patients also exhibit co-occurring substance-related disorders. Notably, a segment of patients has additional health challenges including obesity, diabetes, and pulmonary asthma. The insurance coverage is varied, with a mix of Medicaid and Medicare, while some individuals lack comprehensive insurance. There is also a notable presence of patients with criminal justice involvement, indicating a potential need for integrated care approaches. Overall, this patient population demonstrates significant mental health needs, often compounded by socioeconomic challenges and various health comorbidities.
+```
 
 ## Setup
 1. Download PCS survey data from the links below into `data/`
