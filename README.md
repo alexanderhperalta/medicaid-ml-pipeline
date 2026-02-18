@@ -8,9 +8,9 @@ This project investigates the relationship between Medicaid coverage and Serious
 - 01_data_processing.ipynb: Handles data engineering and preparation. It includes custom Python classes to:
   - Automate directory and folder creation.
   - Map categorical values across multi-year datasets into a standardized numerical format.
-- 02_HDBSCAN.ipynb: 
-  - Embedded 10,000 patient records using OpenAI's text-embedding-3-small
-  - Clustered patients using HDBSCAN into 11 meaningful groups
+- 02_clusttering.ipynb: 
+  - Embedded 10,000 patient records using OpenAI's text-embedding-3-large.
+  - Clustered patients using HDBSCAN and K-Means into 19 and 20 meaningful groups, respectfully.
   - Generated clinical summaries for each cluster using GPT-4o-mini
 
 ![UMAP Clusters](images/umap_clusters.png)
