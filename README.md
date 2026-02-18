@@ -13,7 +13,7 @@ This project investigates the relationship between Medicaid coverage and Serious
   - Clustered patients using HDBSCAN and K-Means into 19 and 20 meaningful groups, respectfully.
   - Generated clinical summaries for each cluster using GPT-4o-mini
 
-![UMAP Clusters](images/umap_clusters.png)
+![HDBSCAN Clusters](images/HDBSCAN_clusters.png)
 
 - 03_analysis.ipynb: Performs the core statistical analysis. Key features include:
   - Generating summaries of respondent demographics (SMI prevalence, Medicaid enrollment, SSI assistance).
